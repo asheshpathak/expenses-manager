@@ -1,3 +1,0 @@
-[submodule "packages/packages/client"]
-	path = packages/packages/client
-	url = https://github.com/asheshpathak/expenses-manager
