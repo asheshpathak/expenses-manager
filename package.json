@@ -8,8 +8,7 @@
     "packages/server"
   ],
   "scripts": {
-    "start": "cd packages/server && node index.js",
-    "build": "cd packages/client && npm run build"
+    "start": "cd packages/server && node index.js"
   },
   "keywords": [],
   "author": "",
