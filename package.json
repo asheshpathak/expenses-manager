@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd packages/client && npm start",
+    "start": "cd packages/server && npm start",
+    "heroku-postbuild": "cd packages/client && npm install && npm run build",
     "client": "cd packages/client && npm start",
     "server": "cd packages/server && node index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
