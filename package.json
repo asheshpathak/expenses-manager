@@ -10,14 +10,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd packages/server && node app.js",
+    "build": "cd packages/client && npm install && npm run build && cd ../../packages/server && npm install",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "concurrently": "^8.2.2"
-  },
   "engines": {
     "node": "20.11.0"
   }
