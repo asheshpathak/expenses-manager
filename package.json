@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "workspaces":[
+    "packages/client",
+    "packages/server"
+  ],
   "scripts": {
     "start": "cd packages/server && node index.js",
-    "build": "cd packages/client && npm install && npm run build && cd ../server && npm install"
+    "build": "cd packages/client && npm run build"
   },
   "keywords": [],
   "author": "",
