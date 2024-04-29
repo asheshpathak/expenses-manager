@@ -4,9 +4,6 @@
   "description": "",
   "main": "index.js",
   "private": "true",
-  "workspaces": [
-    "packages/client"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd packages/server && node app.js",
