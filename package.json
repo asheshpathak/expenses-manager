@@ -5,13 +5,13 @@
   "main": "index.js",
   "private": "true",
   "workspaces": [
-    "./packages/server",
-    "./packages/client"
+    "packages/server",
+    "packages/client"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
-    "build": "npm install && cd packages/client && npm run build",
+    "build": "cd packages/server && npm install && cd ../client npm install && npm run build",
     "client": "cd packages/client && npm start",
     "server": "cd packages/server && node index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
