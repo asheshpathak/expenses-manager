@@ -1,0 +1,19 @@
+{
+    "name": "expenses-manager",
+    "version": "1.0.0",
+    "description": "Description of your project",
+    "scripts": {
+      "install-client": "cd packages/client && npm install",
+      "build-client": "cd packages/client && npm run build",
+      "start-server": "cd packages/server && npm start"
+    },
+    "author": "Ashesh Pathak",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+      "packages/*"
+    ],
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
