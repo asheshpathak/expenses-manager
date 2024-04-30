@@ -14,7 +14,7 @@ app.get("*", (req, res) => {
 });
 
 // app.get("/",(req,res)=>{
-//   res.send("Hello From Server")
+//   res.send("Hello From Servddder")
 // })
 
 app.listen(PORT, () => {
