@@ -4,7 +4,7 @@
   "description": "Description of your project",
   "scripts": {
     "install-client": "cd packages/client && npm install",
-    "start": "cd packages/server && node index.js"
+    "start": "cd packages/server && npm run start"
   },
   "author": "Ashesh Pathak",
   "license": "MIT",
