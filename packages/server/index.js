@@ -5,11 +5,14 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
-app.use(express.static(path.join(__dirname, "../client/build")));
+// Serve static files from the build folder
+app.use(express.static(path.join(__dirname, "../client", "build")));
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/build", "index.html"));
+// Route all other requests to the React app
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client", "build", "index.html"));
 });
+
 app.listen(PORT, () => {
   console.log(`Listening on PORT ${PORT}`);
 });

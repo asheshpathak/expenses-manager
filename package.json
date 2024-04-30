@@ -4,7 +4,7 @@
   "description": "Description of your project",
   "scripts": {
     "install-client": "cd packages/client && npm install",
-    "build": "cd packages/client && npm run build",
+    "build-client": "cd packages/client && npm run build",
     "start": "cd packages/server && npm start"
   },
   "author": "Ashesh Pathak",
