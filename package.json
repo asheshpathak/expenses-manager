@@ -5,7 +5,7 @@
   "scripts": {
     "install-client": "cd packages/client && npm install",
     "build-client": "cd packages/client && npm run build",
-    "start": "cd packages/client && npm run build && cd ../server && npm start",
+    "start": "cd packages/client && npm run build && cd ../server && npm start"
   },
   "author": "Ashesh Pathak",
   "license": "MIT",
