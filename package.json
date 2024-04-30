@@ -5,7 +5,9 @@
   "scripts": {
     "install-client": "cd packages/client && npm install",
     "build-client": "cd packages/client && npm run build",
-    "start": "cd packages/client && npm run build && cd ../server && npm start"
+    "start": "cd packages/client && npm run build && cd ../server && npm start",
+    "heroku-postbuild":
+      "NPM_CONFIG_PRODUCTION=false npm install --prefix packages/client && npm run build --prefix packages/client"
   },
   "author": "Ashesh Pathak",
   "license": "MIT",
