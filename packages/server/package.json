@@ -6,12 +6,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd ../client && npm run build && cd ../server && node index.js"
+    "start": "cd ../client && npm run build && cd ../server && node --inspect index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "numeral": "^2.0.6"
   }
 }

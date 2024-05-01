@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Description of your project",
   "scripts": {
-    "install-client": "cd packages/client && npm install",
     "start": "cd packages/server && npm run start"
   },
   "author": "Ashesh Pathak",
@@ -18,5 +17,8 @@
   "engines": {
     "node": "20.11.0",
     "npm": "10.5.0"
+  },
+  "devDependencies": {
+    "heapdump": "^0.3.15"
   }
 }

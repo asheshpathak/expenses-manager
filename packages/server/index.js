@@ -13,9 +13,14 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client", "build", "index.html"));
 });
 
-// app.get("/",(req,res)=>{
-//   res.send("Hello From Servddder")
-// })
+app.get("/heap", (req, res) => {
+  const N = 10000;
+  global.helloList = [];
+  for (var i = 0; i < N; i++) {
+    global.helloList.push(`Hello~${i}`);
+  }
+  res.send("Heap Added");
+});
 
 app.listen(PORT, () => {
   console.log(`Listening on PORT ${PORT}`);
